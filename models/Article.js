@@ -1,4 +1,3 @@
-console.log("Article.js in use");
 var mongoose = require("mongoose");
 
 // saves reference to schema constructor
@@ -14,9 +13,9 @@ var ArticleSchema = new Schema({
         type: String,
         required: true
     },
-    comments: {
+    note: {
         type: Schema.Types.ObjectId,
-        ref: "Comments"
+        ref: "Note"
     }
 });
 
